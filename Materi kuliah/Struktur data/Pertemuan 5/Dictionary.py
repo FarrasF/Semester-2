@@ -1,0 +1,86 @@
+<<<<<<< HEAD
+#membuat struktur data dictionary
+userlogin ={"name":"Farras","age":19, "Role":"Cyber Security"}
+print(type(userlogin));
+
+#mengakses data dalam dictionary
+print(f"Nama Akun : {userlogin['name']}")
+print(f"Umur Akun : {userlogin['age']} tahun")
+print(f"Role Akun : {userlogin['Role']}")
+
+#akses data seluruh
+print(userlogin.items())
+print(userlogin.keys())
+print(userlogin.values())
+
+#menambahkan data baru dalam dictionary
+userlogin["email"] = "farrasfairuz08@gmail.com"
+print(userlogin)
+
+#menghapus data big_On dari dictionary
+userlogin.pop("email")
+print(userlogin)
+
+#mengubah data kedalam dictionari big-O 0(1)
+userlogin["name"] = "user"
+print(userlogin)
+
+#nested dictionary
+dbUser = {"user1":{"name":"Farras","age":19, "Role":"data analyst"},
+"user2":{"name":"Bagas","age":25, "Role":"Backend Developer"},
+"user3":{"name":"Fauzan","age":20, "Role":"frontend Developer"}}
+
+print(dbUser)
+#akses value base key
+print(dbUser["user1"])
+
+#melakukan pencarian data dalam dictionary
+findword =  input("Masukkan Kata yang ingin dicari : ")
+if findword in dbUser:
+    print("Data ditemukan")
+    print(dbUser[findword])
+else: 
+=======
+#membuat struktur data dictionary
+userlogin ={"name":"Farras","age":19, "Role":"Cyber Security"}
+print(type(userlogin));
+
+#mengakses data dalam dictionary
+print(f"Nama Akun : {userlogin['name']}")
+print(f"Umur Akun : {userlogin['age']} tahun")
+print(f"Role Akun : {userlogin['Role']}")
+
+#akses data seluruh
+print(userlogin.items())
+print(userlogin.keys())
+print(userlogin.values())
+
+#menambahkan data baru dalam dictionary
+userlogin["email"] = "farrasfairuz08@gmail.com"
+print(userlogin)
+
+#menghapus data big_On dari dictionary
+userlogin.pop("email")
+print(userlogin)
+
+#mengubah data kedalam dictionari big-O 0(1)
+userlogin["name"] = "user"
+print(userlogin)
+
+#nested dictionary
+dbUser = {"user1":{"name":"Farras","age":19, "Role":"data analyst"},
+"user2":{"name":"Bagas","age":25, "Role":"Backend Developer"},
+"user3":{"name":"Fauzan","age":20, "Role":"frontend Developer"}}
+
+print(dbUser)
+#akses value base key
+print(dbUser["user1"])
+
+#melakukan pencarian data dalam dictionary
+findword =  input("Masukkan Kata yang ingin dicari : ")
+if findword in dbUser:
+    print("Data ditemukan")
+    print(dbUser[findword])
+else: 
+>>>>>>> 825fc310cdea392d93ae14421ae3cc8c573059d0
+    print("Data tidak ditemukan")
